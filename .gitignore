@@ -1,0 +1,12 @@
+# Cross compiler output
+*.o
+*.obj
+*.out
+*.elf
+*.map
+
+# CppUTest framework
+cpputest/
+
+# vscode config
+.vscode/
