@@ -36,7 +36,7 @@ CFLAGS += -Wswitch-enum -Wconversion -Wno-long-long -pedantic-errors -Wsign-conv
 
 # Linker flags
 # Because we are using newlib, newlib nano, semihosting, etc. - We need to link appropriate GNU ARM toochain .specs file which came with the toolchain download (as well as all the library implementations)
-LDFLAGS += -T $(SRC_DIR)/stm32_ls.ld
+LDFLAGS += -T $(BUILD_DIR)/stm32_ls.ld
 LDFLAGS += --specs=nano.specs # ***************NEWLIB NANO ONLY********************************************************************************************
 #LDFLAGS += --specs=rdimon.specs # ***************SEMIHOSTING + NEWLIB NANO********************************************************************************************
 LDFLAGS += -mcpu=$(MACH) -mthumb # Needed to link with standard C library
